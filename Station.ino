@@ -26,25 +26,26 @@ void loop() {
         motor1.run(FORWARD);
         motor2.run(FORWARD);
         Serial.println("Up");
-        delay(100);
         break;
       case '2':
         motor1.run(BACKWARD);
         motor2.run(BACKWARD);
         Serial.println("Down");
-        delay(100);
         break;
       case '3':
         motor1.run(FORWARD);
         motor2.run(RELEASE);
         Serial.println("Left");
-        delay(100);
         break;
       case '4':
         motor1.run(RELEASE);
         motor2.run(FORWARD);
         Serial.println("Right");
-        delay(100);
+        break;
+      case '5':
+        motor1.run(RELEASE);
+        motor2.run(RELEASE);
+        Serial.println("Stop");
         break;
       default:
         motor1.run(RELEASE);
