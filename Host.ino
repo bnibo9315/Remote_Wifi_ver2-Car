@@ -71,6 +71,11 @@ void loop() {
   {
     Serial.print("4");
   }
+  else  if (data == "Stop")
+  {
+    Serial.print("5");
+  }
+
 
  // Serial.println(data);
   client.flush();
